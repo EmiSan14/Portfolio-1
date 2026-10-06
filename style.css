@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background-color: #242424;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 90%;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  color: #fff51b;
+}
+
+h1 {
+  font-family: "Boldonse";
+}
+
+h2,
+h3,
+.project a,
+.cv a {
+  font-family: "Momo Trust Sans";
+}
+
+p {
+  font-family: "Source Sans 3";
+}
+
+h1 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+.project h3 {
+  font-size: 16px;
+}
+
+.project__links li a,
+.cv ul li a {
+  font-size: 12px;
+}
+
+.project__description {
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fcbc1b;
+}
+
+h1 {
+  text-align: center;
+  text-shadow: 2px 2px #000;
+}
+
+h2 {
+  text-shadow: 2px 2px #000;
+}
+
+h3 {
+  text-shadow: 1px 1px #000;
+}
+
+.page-heading,
+.projects,
+.cv {
+  padding: 20px 10px;
+  border-radius: 4px;
+  background-color: #474747;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: solid 2px #fff;
+}
+
+.project__image {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.project ul,
+.cv ul {
+  list-style: square inside;
+  color: #fff51b;
+}
+
+#square-eyes-thumbnail {
+  background-color: #fbf7ba;
+}
+
+#c-s-m-thumbnail {
+  background-color: #6cebf5;
+}
+
+/* ==== MEDIA QUERIES ==== */
+
+@media screen and (min-width: 600px) {
+  h2 {
+    text-align: center;
+  }
+
+  .projects h2 {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .projects {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .project {
+    width: 30%;
+  }
+
+  .project__links {
+    align-self: flex-end;
+  }
+
+  .cv {
+    width: 50%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    width: 80%;
+  }
+
+  .cv {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .projects {
+    padding: 40px 30px;
+  }
+}
